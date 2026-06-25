@@ -20,7 +20,7 @@ jobs:
       - name: Ejecutar pruebas con pytest
         run: pytest
 
-    - name: SonarQube Cloud Scan
+      - name: SonarQube Cloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
